@@ -110,4 +110,4 @@ with c2:
         st.markdown("  and where Foodix should not invest 🟥")
 
         # update every 5 mins
-        time.sleep(600)  
+        time.sleep(180)  
