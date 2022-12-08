@@ -82,10 +82,10 @@ with c2:
     collect = st.button('Collect additional data', disabled=True)
 
     stop_col = st.button('Stop collecting', disabled=True)
-
-    sub_an = st.button('Launch analysis over collected data', disabled=True)
-
+    
     st.warning('Collection available only on a local instance.', icon="⚠️")
+
+    sub_an = st.button('Launch analysis over collected data', disabled=False)
 
 if collect:
     with st.spinner('Wait for it...'):
