@@ -80,6 +80,8 @@ with c2:
     st.write(str(ln_temp) + "/" + str(len(np.arange(min_lng, max_lng, 0.002))*len(np.arange(min_lat, max_lat, 0.002))) + " pictures already collected.")
 
     collect = st.button('Collect additional data')
+    
+    stop_col = st.button('Stop collecting')
 
     sub_an = st.button('Launch analysis over collected data')
 
@@ -111,6 +113,12 @@ if collect:
                     out = open('temp/test/'+str(i)+'_'+str(j)+'.png', 'wb')
                     out.write(response.read())
                     out.close()
+                    
+                if stop_col:
+                    break
+            
+            if stop_col:
+                break
     
 if sub_an:
 
